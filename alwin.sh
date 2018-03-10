@@ -26,4 +26,8 @@ sed -i 's/P/5/g' temp3.txt
 sed -i 's/F/0/g' temp3.txt
 
 
+awk '{printf($1" "(($2 * 4) + ($3 * 4) + ($4 * 3) + ($5 * 3) + ($6 * 3) + ($7 * 3) + ($8 * 1) + ($9 * 1) + ($10 * 1))/23)}' temp3.txt > cgpa.txt
+
+
+sed -i 's/MDL/\nMDL/g' cgpa.txt
 
